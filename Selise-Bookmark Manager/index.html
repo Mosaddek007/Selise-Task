@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bookmark Manager</title>
+</head>
+<body>
+
+<h1>Add Bookmark</h1>
+
+        <div class="">
+            <form class="form" action="#">
+                    <div class="input-field">
+                        <label for="title">Title</label>
+                        <input id="title" name="title" type="text"
+                            placeholder="Input a Bookmark Title">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="url">URL</label>
+                        <input name="url" type="text"
+                            placeholder="Input Valid URL Here">
+                    </div>
+
+                    <div>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                    <option value="Study">Study</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Entertainment">Entertainment</option>
+                    </select>
+                    </div> 
+                    <button onclick="Cancel('cancel')" >Cancel</button>
+                                   
+                    <button class="save_button">Save</button>
+            </form>
+            <h2>Saved Bookmarks</h2>
+            
+            <div class="bookmarks"></div>
+        </div>
+<script src="./script.js"></script>
+</body>
+</html>
